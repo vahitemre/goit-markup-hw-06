@@ -82,8 +82,13 @@
               ></textarea>
             </div>
           </label>
-          <label class="checkbox-wrapper">
-            <input type="checkbox" required />
+          <label class="checkbox-wrapper" for="mycheckbox">
+            <input type="checkbox" id="mycheckbox" required />
+            <label for="mycheckbox">
+              <svg class="check-icon" width="10" height="8" fill="#ffffff">
+                <use href="./images/icons.svg#icon-check"></use>
+              </svg>
+            </label>
             I accept the terms and conditions of the
             <a href="#">Privacy Policy</a>
           </label>
@@ -91,9 +96,56 @@
         </form>
       </div>
     </div>
+    <div class="menu-modal">
+      <div class="menu-content">
+        <button class="menu-close">
+          <svg class="icon" width="8" height="8">
+            <use href="./images/icons.svg#icon-Vector"></use>
+          </svg>
+        </button>
+        <nav class="menu-nav">
+          <ul>
+            <li><a href="#" class="link current">Studio</a></li>
+            <li><a href="#portfolio" class="link">Portfolio</a></li>
+            <li><a href="#contacts" class="link">Contacts</a></li>
+          </ul>
+        </nav>
+        <address class="menu-contacts">
+          <a href="tel:+110001111111" class="link">+11 (000) 111-11-11</a>
+          <a href="mailto:info@devstudio.com" class="link"
+            >info@devstudio.com</a
+          >
+        </address>
+        <div class="menu-social">
+          <a href="">
+            <svg class="icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-instagram" />
+            </svg>
+          </a>
+          <a href="">
+            <svg class="icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-twitter" />
+            </svg>
+          </a>
+          <a href="">
+            <svg class="icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-facebook" />
+            </svg>
+          </a>
+          <a href="">
+            <svg class="icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-linkedin" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
     <header class="top-line">
       <div class="container header-container">
         <a href="#" id="logo"><span class="web">WEB</span>STUDIO</a>
+        <svg class="menu-icon" width="24" height="24">
+          <use href="./images/icons.svg#icon-menu"></use>
+        </svg>
         <nav>
           <ul class="page-nav">
             <li><a href="#" class="link current">Studio</a></li>
@@ -411,7 +463,7 @@
     <footer>
       <div class="cont-footer">
         <ul>
-          <li>
+          <li class="footer-first">
             <a href="#" class="logo-footer"
               ><span class="web">WEB</span>STUDIO</a
             >
